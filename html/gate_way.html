@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>网关管理</title>
+    <!-- <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/pageNav.css" />
+    <link rel="stylesheet" type="text/css" href="../css/gate.css">
+    <style type="text/css">
+        #hide_tr{display: table-row!important;height: 0;}
+        /*自定义占位,但不显示大小及内容*/
+        #hide_tr *{margin-top: 0;margin-bottom: 0;padding-top: 0;padding-bottom: 0;border-top: 0;border-bottom: 0;height: 0;}
+    </style>
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <div class="header">
+            <div class="user">
+                <i class="time_now">2018-3-20</i>
+                <b>星期五</b>
+                <p><span class="user_pic"><img src=""></span><span class="user_name">用户名哈哈哈啊哈哈</span></p>
+                <span class="login_out">退出</span>
+            </div>
+            <div class="title">
+                <div class="title_pic">
+                    <img src="../img/mid_t.png">
+                    <ul class="tab_box left_btn">
+                        <li>
+                            <span class="btn_title">modbos协议</span>
+                            <div class="selection">
+                                <span class="two_opt">网关管理</span>
+                                <div class="selection_three">
+                                    <span class="three_opt">实时数据</span>
+                                    <span class="three_opt">远程监控</span>
+                                </div>
+                                <span class="two_opt">远程监控管理</span>
+                                <div class="selection_three">
+                                    <span class="three_opt">实时数据</span>
+                                    <span class="three_opt">远程监控</span>
+                                </div>
+                                <span class="two_opt">历史数据管理</span>
+                                <div class="selection_three">
+                                    <span class="three_opt">实时数据</span>
+                                    <span class="three_opt">远程监控</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="btn_title">云天创协议</span>
+                            <div class="selection">
+                                <span>网关管理</span>
+                                <span>远程监控管理</span>
+                                <span>历史数据管理</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="btn_title">协议管理</span>
+                            <div class="selection">
+                                <span>网关管理</span>
+                                <span>远程监控管理</span>
+                                <span>历史数据管理</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="tab_box right_btn">
+                        <li>
+                            <span class="btn_title">字典管理</span>
+                        </li>
+                        <li>
+                            <span class="btn_title">日志管理</span>
+                        </li>
+                        <li>
+                            <span class="btn_title">基础管理</span>
+                        </li>
+                        <li>
+                            <span class="btn_title">服务器配置</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="screen_box">
+                <h3 class="condition">网关管理</h3>
+                <div class="screen">
+                    <div class="nav_screen">
+                        <label class="tit_field">协议：</label>
+                        <div class="invented_select">
+                            <p class="show_option" id="show_option1">请选择</p>
+                            <label for="show_option1"><img src="../img/down_select.png"></label>
+                            <ul class="invented_option">
+                                <li><span>请选择</span></li>
+                                <li><span>选择1</span></li>
+                                <li><span>选择2</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav_screen">
+                        <label class="tit_field">网关ID：</label>
+                        <div class="invented_select">
+                            <p class="show_option" id="show_option2">请选择</p>
+                            <label for="show_option2"><img src="../img/down_select.png"></label>
+                            <ul class="invented_option">
+                                <li><span>请选择</span></li>
+                                <li><span>选择1</span></li>
+                                <li><span>选择2</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav_screen">
+                        <label class="tit_field">节点名称：</label>
+                        <div class="invented_select">
+                            <p class="show_option" id="show_option1">请选择</p>
+                            <label for="show_option1"><img src="../img/down_select.png"></label>
+                            <ul class="invented_option">
+                                <li><span>请选择</span></li>
+                                <li><span>选择1</span></li>
+                                <li><span>选择2</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="screen_btn">查询</span>
+                    <span class="screen_btn">清空</span>
+                </div>
+            </div>
+            <div class="data_box">
+                <ul class="decorate">
+                    <li class="spot"></li>
+                    <li class="spot"></li>
+                    <li class="spot"></li>
+                    <li class="spot"></li>
+                </ul>
+                <div class="coat">
+                    <ul class="operation">
+                        <li><img src="../img/add.png"><span>添加</span></li>
+                        <li><img src="../img/modify.png"><span>修改</span></li>
+                        <li><img src="../img/detail.png"><span>详情</span></li>
+                        <span class="screen_btn">导出</span>
+                    </ul>
+                    <div class="datasheet_list">
+                        <div class="row_title">
+                            <p class="gate_list"><label for="">网关ID：</label><span class="title_table">192.168.1.1</span></p>
+                            <p class="gate_list"><label for="">协议：</label><span class="title_table">modbus</span></p>
+                            <p class="gate_list"><label for="">服务器IP地址：</label><span class="title_table">192.168.1.33</span></p>
+                            <p class="gate_list"><label for="">端口：</label><span class="title_table">10</span></p>
+                        </div>
+                        <table class="datasheet">
+                            <thead>
+                                <tr>
+                                    <th><span>节点名称</span></th>
+                                    <th><span>节点ID</span></th>
+                                    <th><span>控制字</span></th>
+                                    <th><span>寄存器起始地址高八位/低八位</span></th>
+                                    <th><span>寄存器数量高八位/低八位</span></th>
+                                    <th><span>周</span></th>
+                                    <th><span>算法</span></th>
+                                    <th><span>操作人</span></th>
+                                    <th><span>时 间</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>传感器 1</td>
+                                    <td>1</td>
+                                    <td>0x01</td>
+                                    <td>0x01</td>
+                                    <td>0x23</td>
+                                    <td>10分钟</td>
+                                    <td>不定时</td>
+                                    <td>gaoda</td>
+                                    <td>2018-01-06  12:54:30</td>
+                                </tr>
+                                <tr>
+                                    <td>传感器 2</td>
+                                    <td>1</td>
+                                    <td>0x01</td>
+                                    <td>0x01</td>
+                                    <td>0x23</td>
+                                    <td>10分钟</td>
+                                    <td>不定时</td>
+                                    <td>gaoda</td>
+                                    <td>2018-01-06  12:54:30</td>
+                                </tr>
+                                <tr>
+                                    <td>传感器 3</td>
+                                    <td>1</td>
+                                    <td>0x01</td>
+                                    <td>0x01</td>
+                                    <td>0x23</td>
+                                    <td>10分钟</td>
+                                    <td>不定时</td>
+                                    <td>gaoda</td>
+                                    <td>2018-01-06  12:54:30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="page_box">
+                            <div class="page_information">
+                                <p class="all_page">共<span>1</span>条数据</p>
+                                <div class="psage_num">
+                                    <span>每页显示</span>
+                                    <div class="invented_select">
+                                        <p class="show_option" id="show_option1">5</p>
+                                        <label for="show_option1"><img src="../img/down_select.png"></label>
+                                        <ul class="invented_option">
+                                            <li><span>5</span></li>
+                                            <li><span>10</span></li>
+                                            <li><span>15</span></li>
+                                        </ul>
+                                    </div>
+                                    <span>条</span>
+                                </div>
+                            </div>      
+                            <nav aria-label="Page navigation" class="page-nav-outer" id="PageNavId"></nav>
+                        </div>
+                    </div>
+                    <div class="datasheet_list">
+                        <div class="row_title">
+                            <p class="gate_list"><label for="">网关ID：</label><span class="title_table">192.168.1.2</span></p>
+                            <p class="gate_list"><label for="">协议：</label><span class="title_table">modbus</span></p>
+                            <p class="gate_list"><label for="">服务器IP地址：</label><span class="title_table">192.168.1.33</span></p>
+                            <p class="gate_list"><label for="">端口：</label><span class="title_table">10</span></p>
+                        </div>
+                        <table class="datasheet">
+                            <thead>
+                                <tr>
+                                    <th><span>节点名称</span></th>
+                                    <th><span>节点ID</span></th>
+                                    <th><span>控制字</span></th>
+                                    <th><span>寄存器起始地址高八位/低八位</span></th>
+                                    <th><span>寄存器数量高八位/低八位</span></th>
+                                    <th><span>周</span></th>
+                                    <th><span>算法</span></th>
+                                    <th><span>操作人</span></th>
+                                    <th><span>时 间</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>传感器 1</td>
+                                    <td>1</td>
+                                    <td>0x01</td>
+                                    <td>0x01</td>
+                                    <td>0x23</td>
+                                    <td>10分钟</td>
+                                    <td>不定时</td>
+                                    <td>gaoda</td>
+                                    <td>2018-01-06  12:54:30</td>
+                                </tr>
+                                <tr>
+                                    <td>传感器 2</td>
+                                    <td>1</td>
+                                    <td>0x01</td>
+                                    <td>0x01</td>
+                                    <td>0x23</td>
+                                    <td>10分钟</td>
+                                    <td>不定时</td>
+                                    <td>gaoda</td>
+                                    <td>2018-01-06  12:54:30</td>
+                                </tr>
+                                <tr>
+                                    <td>传感器 3</td>
+                                    <td>1</td>
+                                    <td>0x01</td>
+                                    <td>0x01</td>
+                                    <td>0x23</td>
+                                    <td>10分钟</td>
+                                    <td>不定时</td>
+                                    <td>gaoda</td>
+                                    <td>2018-01-06  12:54:30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="page_box">
+                            <div class="page_information">
+                                <p class="all_page">共<span>1</span>条数据</p>
+                                <div class="psage_num">
+                                    <span>每页显示</span>
+                                    <div class="invented_select">
+                                        <p class="show_option" id="show_option1">5</p>
+                                        <label for="show_option1"><img src="../img/down_select.png"></label>
+                                        <ul class="invented_option">
+                                            <li><span>5</span></li>
+                                            <li><span>10</span></li>
+                                            <li><span>15</span></li>
+                                        </ul>
+                                    </div>
+                                    <span>条</span>
+                                </div>
+                            </div>
+                            <nav aria-label="Page navigation" class="page-nav-outer" id="PageNavId2"></nav>
+                        </div>
+                    </div>
+                    <div class="datasheet_list">
+                        <div class="row_title">
+                            <p class="gate_list"><label for="">网关ID：</label><span class="title_table">192.168.1.2</span></p>
+                            <p class="gate_list"><label for="">协议：</label><span class="title_table">modbus</span></p>
+                            <p class="gate_list"><label for="">服务器IP地址：</label><span class="title_table">192.168.1.33</span></p>
+                            <p class="gate_list"><label for="">端口：</label><span class="title_table">10</span></p>
+                        </div>
+                        <table class="datasheet">
+                            <thead>
+                                <tr>
+                                    <th><span>节点名称</span></th>
+                                    <th><span>节点ID</span></th>
+                                    <th><span>控制字</span></th>
+                                    <th><span>寄存器起始地址高八位/低八位</span></th>
+                                    <th><span>寄存器数量高八位/低八位</span></th>
+                                    <th><span>周</span></th>
+                                    <th><span>算法</span></th>
+                                    <th><span>操作人</span></th>
+                                    <th><span>时 间</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>传感器 1</td>
+                                    <td>1</td>
+                                    <td>0x01</td>
+                                    <td>0x01</td>
+                                    <td>0x23</td>
+                                    <td>10分钟</td>
+                                    <td>不定时</td>
+                                    <td>gaoda</td>
+                                    <td>2018-01-06  12:54:30</td>
+                                </tr>
+                                <tr>
+                                    <td>传感器 2</td>
+                                    <td>1</td>
+                                    <td>0x01</td>
+                                    <td>0x01</td>
+                                    <td>0x23</td>
+                                    <td>10分钟</td>
+                                    <td>不定时</td>
+                                    <td>gaoda</td>
+                                    <td>2018-01-06  12:54:30</td>
+                                </tr>
+                                <tr>
+                                    <td>传感器 3</td>
+                                    <td>1</td>
+                                    <td>0x01</td>
+                                    <td>0x01</td>
+                                    <td>0x23</td>
+                                    <td>10分钟</td>
+                                    <td>不定时</td>
+                                    <td>gaoda</td>
+                                    <td>2018-01-06  12:54:30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="page_box">
+                            <div class="page_information">
+                                <p class="all_page">共<span>1</span>条数据</p>
+                                <div class="psage_num">
+                                    <span>每页显示</span>
+                                    <div class="invented_select">
+                                        <p class="show_option" id="show_option1">5</p>
+                                        <label for="show_option1"><img src="../img/down_select.png"></label>
+                                        <ul class="invented_option">
+                                            <li><span>5</span></li>
+                                            <li><span>10</span></li>
+                                            <li><span>15</span></li>
+                                        </ul>
+                                    </div>
+                                    <span>条</span>
+                                </div>
+                            </div>
+                            <nav aria-label="Page navigation" class="page-nav-outer" id="PageNavId3"></nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/vue.min.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/pageNav.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../js/gate.js"></script>
+    <script type="text/javascript" src="../js/page.js"></script>
+    <script type="text/javascript">
+        /**
+         * @Author:      HTL
+         * @Email:       Huangyuan413026@163.com
+         * @DateTime:    2016-12-26 15:05:55
+         * @Description: 固定表格的表头
+         * 宽度为表格的宽,高度为不含滚动条浏览器的高度
+         */
+        $(function(){
+            function fix_table($obj,heights){
+                if(!$obj || $obj.length<=0 || ($('html').height() - $(window).height())<0) return false;
+                $obj.show();
+                //最大高度为不包含滚动条的高度
+                var height = $obj.find('tbody').height() - ($('html').height() - $(window).height()) - 3;
+                //设置表格内容高度和宽度
+                $obj.find('tbody').css({'max-width': $obj.width(),'overflow':'auto','max-height':heights});
+                //移出复制的表头并重新添加
+                $obj.find("#hide_tr").remove();
+                //内容宽度自适应
+                $obj.find('thead tr th').css('width','auto');
+                // 表头复制并插入到内容
+                $obj.find('tbody tr:first').before($obj.find('thead tr').clone());
+                var _th = $obj.find('thead th');
+                //移出内容的行信息并设置跟表头一样的宽度
+                $obj.find('tbody tr:first th').each(function(i,j){ $(this).html('').width($(_th[i]).innerWidth());});
+                //表格第一行内容不显示仅占位
+                $obj.find('tbody tr:first').attr('id','hide_tr').css('display','table-row');
+                //显示滚动条
+                $obj.find('tbody,thead tr,tfoot tr').css('display','block');
+                //表格内容宽
+                _th = $obj.find('tbody th');
+                //表头th宽跟内容th宽一致
+                $obj.find('thead tr:first th').each(function(i,j){ $(this).width($(_th[i]).width());});
+                //页脚th宽跟内容th宽一致
+                $obj.find('tfoot tr:first th').each(function(i,j){ $(this).width($(_th[i]).width());});
+            }
+            //fix_table($(".datasheet"),'100px');
+        })
+    </script>
+</body>
+</html>

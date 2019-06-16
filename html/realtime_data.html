@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>实时数据列表</title>
+    <!-- <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/pageNav.css" />
+    <link rel="stylesheet" type="text/css" href="../css/gate.css">
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <div class="header">
+            <div class="user">
+                <i class="time_now">2018-3-20</i>
+                <b>星期五</b>
+                <p><span class="user_pic"><img src=""></span><span class="user_name">用户名哈哈哈啊哈哈</span></p>
+                <span class="login_out">退出</span>
+            </div>
+            <div class="title">
+                <div class="title_pic">
+                    <img src="../img/mid_t.png">
+                    <ul class="tab_box left_btn">
+                        <li>
+                            <span class="btn_title">modbos协议</span>
+                            <div class="selection">
+                                <span>网关管理</span>
+                                <span>远程监控管理</span>
+                                <span>历史数据管理</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="btn_title">云天创协议</span>
+                            <div class="selection">
+                                <span>网关管理</span>
+                                <span>远程监控管理</span>
+                                <span>历史数据管理</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="btn_title">协议管理</span>
+                            <div class="selection">
+                                <span>网关管理</span>
+                                <span>远程监控管理</span>
+                                <span>历史数据管理</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="tab_box right_btn">
+                        <li>
+                            <span class="btn_title">字典管理</span>
+                        </li>
+                        <li>
+                            <span class="btn_title">日志管理</span>
+                        </li>
+                        <li>
+                            <span class="btn_title">基础管理</span>
+                        </li>
+                        <li>
+                            <span class="btn_title">服务器配置</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="screen_box">
+                <h3 class="condition">实时数据列表</h3>
+                <div class="screen control">
+                    <div class="nav_screen">
+                        <label class="tit_field">网关：</label>
+                        <div class="invented_select">
+                            <p class="show_option" id="show_option2">请选择</p>
+                            <label for="show_option2"><img src="../img/down_select.png"></label>
+                            <ul class="invented_option">
+                                <li><span>请选择</span></li>
+                                <li><span>选择1</span></li>
+                                <li><span>选择2</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav_screen">
+                        <label class="tit_field">节点：</label>
+                        <div class="invented_select">
+                            <p class="show_option" id="show_option1">请选择</p>
+                            <label for="show_option1"><img src="../img/down_select.png"></label>
+                            <ul class="invented_option">
+                                <li><span>请选择</span></li>
+                                <li><span>选择1</span></li>
+                                <li><span>选择2</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav_screen">
+                        <label class="tit_field">控制字：</label>
+                        <div class="invented_select">
+                            <p class="show_option" id="show_option1">请选择</p>
+                            <label for="show_option1"><img src="../img/down_select.png"></label>
+                            <ul class="invented_option">
+                                <li><span>请选择</span></li>
+                                <li><span>选择1</span></li>
+                                <li><span>选择2</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="screen_btn">查询</span>
+                    <span class="screen_btn">清空</span>
+                    <span class="screen_btn">导出</span>
+                </div>
+            </div>
+            <div class="control_box">
+                <div class="information_mainleft">
+                    <div class="data_information">
+                        <ul class="decorate">
+                            <li class="spot"></li>
+                            <li class="spot"></li>
+                            <li class="spot"></li>
+                            <li class="spot"></li>
+                        </ul>
+                        <div class="coat">
+                            <h3 class="control_title">网关信息</h3>
+                            <table class="control_table">
+                                <thead>
+                                    <tr>
+                                        <th>网关ID</th>
+                                        <th>协议</th>
+                                        <th>服务器IP</th>
+                                        <th>端口</th>
+                                        <th>时间</th>
+                                        <th>创建人</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>192.168.1.1</td>
+                                        <td>modbus</td>
+                                        <td>192.168.1.33</td>
+                                        <td>10001</td>
+                                        <td><span class="time_td">2018-05-03</span><span class="time_td">12:35:12</span></td>
+                                        <td>admin</td>
+                                    </tr>
+                                    <tr>
+                                        <td>192.168.1.1</td>
+                                        <td>modbus</td>
+                                        <td>192.168.1.33</td>
+                                        <td>10001</td>
+                                        <td><span class="time_td">2018-05-03</span><span class="time_td">12:35:12</span></td>
+                                        <td>admin</td>
+                                    </tr>
+                                    <tr>
+                                        <td>192.168.1.1</td>
+                                        <td>modbus</td>
+                                        <td>192.168.1.33</td>
+                                        <td>10001</td>
+                                        <td><span class="time_td">2018-05-03</span><span class="time_td">12:35:12</span></td>
+                                        <td>admin</td>
+                                    </tr>
+                                    <tr>
+                                        <td>192.168.1.1</td>
+                                        <td>modbus</td>
+                                        <td>192.168.1.33</td>
+                                        <td>10001</td>
+                                        <td><span class="time_td">2018-05-03</span><span class="time_td">12:35:12</span></td>
+                                        <td>admin</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="page_box">
+                                <div class="page_information">
+                                    <p class="all_page">共<span>4</span>条数据</p>
+                                </div>     
+                                <nav aria-label="Page navigation" class="page-nav-outer" id="PageNavId4"></nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hybrid_information">
+                        <ul class="decorate">
+                            <li class="spot"></li>
+                            <li class="spot"></li>
+                            <li class="spot"></li>
+                            <li class="spot"></li>
+                        </ul>
+                        <div class="coat">
+                            <h3 class="control_title">节点信息</h3>
+                            <table class="control_table">
+                                <thead>
+                                    <tr>
+                                        <th>节点ID</th>
+                                        <th>节点名称</th>
+                                        <th>描述</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>传感器1</td>
+                                        <td>第一个传感器</td>
+                                        <td><span class="read_btn">读取</span><span class="contrast_btn">比</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>传感器1</td>
+                                        <td>第二个传感器</td>
+                                        <td><span class="read_btn">读取</span><span class="contrast_btn">比</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>传感器1</td>
+                                        <td>第三个传感器</td>
+                                        <td><span class="read_btn">读取</span><span class="contrast_btn">比</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>传感器1</td>
+                                        <td>第四个传感器</td>
+                                        <td><span class="read_btn">读取</span><span class="contrast_btn">比</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="page_box">
+                                <div class="page_information">
+                                    <p class="all_page">共<span>4</span>条数据</p>
+                                </div>     
+                                <nav aria-label="Page navigation" class="page-nav-outer" id="PageNavId5"></nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="data_realtime">
+                    <ul class="decorate">
+                        <li class="spot"></li>
+                        <li class="spot"></li>
+                        <li class="spot"></li>
+                        <li class="spot"></li>
+                    </ul>
+                    <div class="coat">
+                        <h3 class="control_title">实时数据</h3>
+                        <table class="control_table">
+                            <thead>
+                                <tr>
+                                    <th><span>控制字</span><img src="../img/down_th.png"></th>
+                                    <th><span>操作数据</span><img src="../img/down_th.png"></th>
+                                    <th><span>操作时间</span><img src="../img/down_th.png"></th>
+                                    <th><span>返回状态</span><img src="../img/down_th.png"></th>
+                                    <th><span>操作人</span><img src="../img/down_th.png"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0x01</td>
+                                    <td>on</td>
+                                    <td>2018-07-04 13:13:35</td>
+                                    <td>成功</td>
+                                    <td>admin</td>
+                                </tr>
+                                <tr>
+                                    <td>0x01</td>
+                                    <td>on</td>
+                                    <td>2018-07-04 13:13:35</td>
+                                    <td>成功</td>
+                                    <td>admin</td>
+                                </tr>
+                                <tr>
+                                    <td>0x01</td>
+                                    <td>on</td>
+                                    <td>2018-07-04 13:13:35</td>
+                                    <td>成功</td>
+                                    <td>admin</td>
+                                </tr>
+                                <tr>
+                                    <td>0x01</td>
+                                    <td>on</td>
+                                    <td>2018-07-04 13:13:35</td>
+                                    <td>成功</td>
+                                    <td>admin</td>
+                                </tr>
+                                <tr>
+                                    <td>0x01</td>
+                                    <td>on</td>
+                                    <td>2018-07-04 13:13:35</td>
+                                    <td>成功</td>
+                                    <td>admin</td>
+                                </tr>
+                                <tr>
+                                    <td>0x01</td>
+                                    <td>on</td>
+                                    <td>2018-07-04 13:13:35</td>
+                                    <td>成功</td>
+                                    <td>admin</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="page_box">
+                            <div class="page_information">
+                                <p class="all_page">共<span>1</span>条数据</p>
+                                <div class="psage_num">
+                                    <span>每页显示</span>
+                                    <div class="invented_select">
+                                        <p class="show_option" id="show_option1">5</p>
+                                        <label for="show_option1"><img src="../img/down_select.png"></label>
+                                        <ul class="invented_option">
+                                            <li><span>5</span></li>
+                                            <li><span>10</span></li>
+                                            <li><span>15</span></li>
+                                        </ul>
+                                    </div>
+                                    <span>条</span>
+                                </div>
+                            </div>
+                            <nav aria-label="Page navigation" class="page-nav-outer" id="PageNavId6"></nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/vue.min.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/pageNav.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/gate.js"></script>
+<script type="text/javascript" src="../js/page.js"></script>
+</html>

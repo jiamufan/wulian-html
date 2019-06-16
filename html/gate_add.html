@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>添加网关</title>
+    <!-- <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../layer/mobile/need/layer.css">
+    <link rel="stylesheet" type="text/css" href="../css/gate.css">
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <div class="header">
+            <div class="user">
+                <i class="time_now">2018-3-20</i>
+                <b>星期五</b>
+                <p><span class="user_pic"><img src=""></span><span class="user_name">用户名哈哈哈啊哈哈</span></p>
+                <span class="login_out">退出</span>
+            </div>
+            <div class="title">
+                <div class="title_pic">
+                    <img src="../img/mid_t.png">
+                    <ul class="tab_box left_btn">
+                        <li>
+                            <span class="btn_title">modbos协议</span>
+                            <div class="selection">
+                                <span>网关管理</span>
+                                <span>远程监控管理</span>
+                                <span>历史数据管理</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="btn_title">云天创协议</span>
+                            <div class="selection">
+                                <span>网关管理</span>
+                                <span>远程监控管理</span>
+                                <span>历史数据管理</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="btn_title">协议管理</span>
+                            <div class="selection">
+                                <span>网关管理</span>
+                                <span>远程监控管理</span>
+                                <span>历史数据管理</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="tab_box right_btn">
+                        <li>
+                            <span class="btn_title">字典管理</span>
+                        </li>
+                        <li>
+                            <span class="btn_title">日志管理</span>
+                        </li>
+                        <li>
+                            <span class="btn_title">基础管理</span>
+                        </li>
+                        <li>
+                            <span class="btn_title">服务器配置</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <h3 class="condition">添加网关</h3>
+            <div class="data_box">
+                <ul class="decorate">
+                    <li class="spot"></li>
+                    <li class="spot"></li>
+                    <li class="spot"></li>
+                    <li class="spot"></li>
+                </ul>
+                <div class="coat">
+                    <ul class="operation">
+                        <span class="screen_btn"><img src="../img/return.png"></span>
+                    </ul>
+                    <div class="information_box">
+                        <div class="network">
+                            <div class="title_information">
+                                <h3>网关信息</h3>
+                            </div>
+                            <div class="information_detail">
+                                <ul>
+                                    <li>
+                                        <label for=""><span class="integrant">*</span><span>项目：</span></label>
+                                        <div class="invented_select">
+                                            <p class="show_option" id="show_option1">项目一</p>
+                                            <label for="show_option1"><img src="../img/down_select.png"></label>
+                                            <ul class="invented_option">
+                                                <li><span>项目一</span></li>
+                                                <li><span>项目二</span></li>
+                                                <li><span>项目三</span></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label for=""><span class="integrant">*</span><span>网关主题：</span></label>
+                                        <div class="invented_select">
+                                            <input type="text" class="invented_input">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label for=""><span class="integrant">*</span><span>心跳协议：</span></label>
+                                        <div class="invented_select">
+                                            <p class="show_option" id="show_option1">云天创</p>
+                                            <label for="show_option1"><img src="../img/down_select.png"></label>
+                                            <ul class="invented_option">
+                                                <li><span>云天创</span></li>
+                                                <li><span>天创</span></li>
+                                                <li><span>云天</span></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label for=""><span class="integrant">*</span><span>网关ID：</span></label>
+                                        <div class="invented_select">
+                                            <input type="text" class="invented_input" placeholder="请输入有效网关ID">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label for=""><span class="integrant">*</span><span>服务器信息：</span></label>
+                                        <div class="server_box">
+                                            <div class="invented_select">
+                                                <input type="text" class="invented_input" placeholder="请输入服务器IP地址">
+                                            </div>
+                                            <div class="invented_select port_num">
+                                                <input type="text" class="invented_input" placeholder="请输入端口号">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><span class="keep_btn">保存</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section" id="sections">
+                            <div class="title_information">
+                                <h3>节点信息</h3>
+                            </div>
+                            <div class="information_section">
+                                <table class="node_table">
+                                    <thead>
+                                        <tr>
+                                            <th>节点ID</th>
+                                            <th>节点名称</th>
+                                            <th>节点描述</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><input type="text" value="传感器1"></td>
+                                            <td><input type="text" value="第一个传感器"></td>
+                                            <td>
+                                                <span class="frame_btn add_control">添加控制字</span>
+                                                <span class="frame_btn">查看控制字</span>
+                                                <span class="frame_btn">删   除</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><input type="text" value="传感器2"></td>
+                                            <td><input type="text" value="第二个传感器"></td>
+                                            <td>
+                                                <span class="frame_btn">添加控制字</span>
+                                                <span class="frame_btn">查看控制字</span>
+                                                <span class="frame_btn">删   除</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td><input type="text" value="传感器3"></td>
+                                            <td><input type="text" value="第三个传感器"></td>
+                                            <td>
+                                                <span class="frame_btn">添加控制字</span>
+                                                <span class="frame_btn">查看控制字</span>
+                                                <span class="frame_btn">删   除</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td><input type="text" value="传感器4"></td>
+                                            <td><input type="text" value="第四个传感器"></td>
+                                            <td>
+                                                <span class="frame_btn">添加控制字</span>
+                                                <span class="frame_btn">查看控制字</span>
+                                                <span class="frame_btn">删   除</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td><input type="text" value="传感器5"></td>
+                                            <td><input type="text" value="第五个传感器"></td>
+                                            <td>
+                                                <span class="frame_btn">添加控制字</span>
+                                                <span class="frame_btn">查看控制字</span>
+                                                <span class="frame_btn">删   除</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="page_box">      
+                                    <nav aria-label="Page navigation" class="page-nav-outer" id="node_information"></nav>
+                                </div>
+                            </div>
+                            <div class="operate_down">
+                                <ul>
+                                    <li class="add_stagetr"><img src="../img/add.png"><span>添加节点</span></li>
+                                    <li><img src="../img/download.png"><span>下载节点模板</span></li>
+                                    <li><img src="../img/upload.png"><span>上传</span></li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/vue.min.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../layer/layer.js"></script>
+    <script type="text/javascript" src="../js/gate.js"></script>
+    <script>
+     /**
+     * @Author:      HTL
+     * @Email:       Huangyuan413026@163.com
+     * @DateTime:    2016-12-26 15:05:55
+     * @Description: 固定表格的表头
+     * 宽度为表格的宽,高度为不含滚动条浏览器的高度
+     */
+    function fix_table($obj){
+        if(!$obj || $obj.length<=0 || ($('html').height() - $(window).height())<0) return false;
+        $obj.show();
+        //最大高度为不包含滚动条的高度
+        var height = $obj.find('tbody').height() - ($('html').height() - $(window).height()) - 3;
+        //设置表格内容高度和宽度
+        $obj.find('tbody').css({'max-width': $obj.width(),'overflow':'auto','max-height':height});
+        //移出复制的表头并重新添加
+        $obj.find("#hide_tr").remove();
+        //内容宽度自适应
+        $obj.find('thead tr th').css('width','auto');
+        // 表头复制并插入到内容
+        $obj.find('tbody tr:first').before($obj.find('thead tr').clone());
+        var _th = $obj.find('thead th');
+        //移出内容的行信息并设置跟表头一样的宽度
+        $obj.find('tbody tr:first th').each(function(i,j){ $(this).html('').width($(_th[i]).innerWidth());});
+        //表格第一行内容不显示仅占位
+        $obj.find('tbody tr:first').attr('id','hide_tr').css('display','table-row');
+        //显示滚动条
+        $obj.find('tbody,thead tr,tfoot tr').css('display','block');
+        //表格内容宽
+        _th = $obj.find('tbody th');
+        //表头th宽跟内容th宽一致
+        $obj.find('thead tr:first th').each(function(i,j){ $(this).width($(_th[i]).width());});
+        //页脚th宽跟内容th宽一致
+        $obj.find('tfoot tr:first th').each(function(i,j){ $(this).width($(_th[i]).width());});
+    }
+    $(function(){
+        fix_table($(".node_table"));
+    });
+</script>
+</body>
+</html>
